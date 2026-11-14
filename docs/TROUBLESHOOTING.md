@@ -2,7 +2,7 @@
 
 ## npm ci fails
 
-Confirm that Node.js 20 and npm are installed. Check network connectivity and verify that package.json and package-lock.json are committed together. Use `npm ci` for clean installs rather than manually deleting lockfile entries.
+Confirm that Node.js 22 and npm are installed. Check network connectivity and verify that package.json and package-lock.json are committed together. Use `npm ci` for clean installs rather than manually deleting lockfile entries.
 
 ## Development server does not start
 
@@ -10,7 +10,7 @@ Port 3000 may already be in use. Stop the process occupying the port or use the 
 
 ## Build reports an OpenSSL or Webpack error
 
-The project uses react-scripts 5.0.1. Use the Node.js 20 runtime configured in CI and inspect the exact build error before changing dependencies. Do not upgrade individual Webpack packages blindly because react-scripts has version constraints.
+The project uses react-scripts 5.0.1. Use the Node.js 22 runtime configured in CI and inspect the exact build error before changing dependencies. Do not upgrade individual Webpack packages blindly because react-scripts has version constraints.
 
 ## Cards are not visible
 
