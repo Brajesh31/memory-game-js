@@ -1,33 +1,69 @@
-.card{
-    position: relative;
+.memory-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background: #34283e;
+  cursor: pointer;
+  perspective: 900px;
 }
 
-.card img{
-    width: 100%;
-    display: block;
-    border: 2px solid white;
-    border-radius: 6px;
+.memory-card:focus-visible {
+  outline: 3px solid #ffe08a;
+  outline-offset: 4px;
 }
 
-/* front card - the picture */
-.card .front{
-    transform: rotateY(90deg);
-    position: absolute;
-    transition: all ease-in 0.2s;
+.memory-card:disabled {
+  cursor: default;
 }
 
-.flipped .front{
-    transform: rotateY(0deg);
-    transition-delay: 0.2s;
+.card-inner {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  transform-style: preserve-3d;
 }
 
-/* back card - cover */
-.card .back{
-    transition: all ease-in 0.2s;
-    transition-delay: 0.2s;
+.memory-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  user-select: none;
 }
 
-.flipped .back{
-    transform: rotateY(90deg);
-    transition-delay: 0s;
+.memory-card .front {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  transition: transform 260ms ease;
+}
+
+.memory-card .back {
+  position: relative;
+  transform: rotateY(0deg);
+  transition: transform 260ms ease;
+}
+
+.memory-card.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.memory-card.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+.memory-card:disabled:not(.flipped) {
+  opacity: 0.75;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memory-card img {
+    transition: none;
+  }
 }
