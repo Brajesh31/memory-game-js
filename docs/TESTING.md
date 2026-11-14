@@ -24,7 +24,7 @@ npm test -- --watchAll=false
 npm run build
 ```
 
-The CI workflow runs tests and the production build using Node.js 20.
+The CI workflow runs tests and the production build using Node.js 22.
 
 ## Manual regression checklist
 
