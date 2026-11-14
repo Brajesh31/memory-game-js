@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Node.js 20.x.
+- Node.js 22.x.
 - npm.
 - Git.
 - A modern browser.
@@ -51,4 +51,4 @@ The optimized static files are written to `build/`.
 - If port 3000 is occupied, stop the process using it or accept the alternate port offered by the development server.
 - If installation fails, confirm the Node.js version and network access.
 - If images do not load, verify that the expected image files exist in `public/img/`.
-- If the build reports an OpenSSL/Webpack compatibility issue, use the Node.js 20 runtime configured in CI and inspect the current react-scripts compatibility before changing Node versions.
+- If the build reports an OpenSSL/Webpack compatibility issue, use the Node.js 22 runtime configured in CI and inspect the current react-scripts compatibility before changing Node versions.
