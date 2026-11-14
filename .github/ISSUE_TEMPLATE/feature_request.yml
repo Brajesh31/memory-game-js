@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest a focused improvement to the memory game.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User need or problem
+      description: What should be improved and why?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: checkboxes
+    id: project-fit
+    attributes:
+      label: Project fit
+      options:
+        - label: This proposal fits the current single-player game scope.
+          required: false
+        - label: I can help test or implement the change.
+          required: false
