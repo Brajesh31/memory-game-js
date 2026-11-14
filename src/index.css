@@ -1,11 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/* base style */
-body{
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  font-size: 1.5em;
-  text-align: center;
+:root {
+  color-scheme: dark;
+  font-family: 'Poppins', Arial, sans-serif;
   background: #1b1523;
-  color: white;
+  color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(194, 56, 102, 0.2), transparent 34rem),
+    radial-gradient(circle at 90% 80%, rgba(91, 61, 130, 0.2), transparent 32rem),
+    #1b1523;
+  font-size: 16px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid #ffe08a;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #c23866;
+  color: #fff;
 }
