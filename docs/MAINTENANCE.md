@@ -8,7 +8,7 @@ The default branch is `main`. Workflows that validate application code must trig
 
 ### Node.js CI
 
-The Node.js CI workflow runs on Node.js 20. It installs from the committed lockfile with `npm ci`, runs the Jest suite once, creates a production build, and verifies expected build output.
+The Node.js CI workflow runs on Node.js 22. It installs from the committed lockfile with `npm ci`, runs the Jest suite once, creates a production build, and verifies expected build output.
 
 ### CodeQL
 
