@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   build-and-test:
-    name: Test and build (Node.js 20)
+    name: Test and build (Node.js 22)
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -35,7 +35,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install locked dependencies
