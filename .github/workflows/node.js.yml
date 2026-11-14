@@ -8,7 +8,9 @@ on:
       - "public/**"
       - "package.json"
       - "package-lock.json"
-      - ".github/workflows/node.js.yml"
+      - "README.md"
+      - "docs/**"
+      - ".github/workflows/**"
   pull_request:
     branches: [main]
   workflow_dispatch:
