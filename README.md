@@ -129,7 +129,7 @@ memory-game-js/
 
 ## 6. Requirements
 
-- Node.js 20.x for the documented CI runtime.
+- Node.js 22.x for the documented CI runtime.
 - npm, which is included with Node.js.
 - A modern browser with JavaScript enabled.
 - Git for cloning and contributing.
@@ -223,7 +223,7 @@ Run the production build:
 npm run build
 ```
 
-The CI workflow runs both commands on Node.js 20. Manual browser checks are still needed for visual behavior, keyboard interaction, responsive layouts, and real card-flip timing. See [Testing](docs/TESTING.md).
+The CI workflow runs both commands on Node.js 22. Manual browser checks are still needed for visual behavior, keyboard interaction, responsive layouts, and real card-flip timing. See [Testing](docs/TESTING.md).
 
 ## 13. Continuous Integration
 
